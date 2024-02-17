@@ -1,2 +1,19 @@
 // Import all of Bootstrap's CSS
+
+$decoration-background: rgb(106, 230, 252);
+
 @import "bootstrap/scss/bootstrap";
+
+
+.decoration{
+    position: absolute;
+    height: 100%;
+    padding: 1rem;
+    background: $decoration-background;
+    width: 50%;
+    top: 100px;
+    right: 0;
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
