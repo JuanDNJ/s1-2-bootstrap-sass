@@ -8,209 +8,213 @@
     <script type="module" src="/js/main.js" defer></script>
   </head>
   <body>
-    <!-- Exercici 1  Navbar Grid Bootstrap-->
-    <nav class="navbar navbar-expand-lg py-4 bg-white position-sticky top-0">
-      <section class="container">
-        <div class="row w-100">
-          <div class="col d-flex align-items-center">
-            <a href="#" class="nav-link">
-              <img src="/images/logo-bookmark.svg" alt="Logo" />
-            </a>
+    <section class="container-fluid overflow-hidden">
+      <!-- Exercici 1  Navbar Grid Bootstrap-->
+      <nav class="navbar navbar-expand-lg py-4 bg-white position-sticky top-0">
+        <section class="container">
+          <div class="row w-100">
+            <div class="col d-flex align-items-center">
+              <a href="#" class="nav-link">
+                <img src="/images/logo-bookmark.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="col d-flex justify-content-end d-md-none">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="col-12 col-md-6">
+              <section
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <li class="navbar-item">
+                    <a href="#" class="nav-link fw-bolder me-3">FEATURES</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#" class="nav-link fw-bolder me-3">PRICING</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#" class="nav-link fw-bolder me-3">CONTACT</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a
+                      href="#"
+                      class="btn fw-bolder bg-secondary text-white ms-lg-3"
+                      role="button"
+                      >LOGIN</a
+                    >
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
-          <div class="col d-flex justify-content-end d-md-none">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="col-12 col-md-6">
-            <section
-              class="collapse navbar-collapse justify-content-center"
-              id="navbarNav"
-            >
-              <ul class="navbar-nav">
-                <li class="navbar-item">
-                  <a href="#" class="nav-link fw-bolder me-3">FEATURES</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="nav-link fw-bolder me-3">PRICING</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="nav-link fw-bolder me-3">CONTACT</a>
-                </li>
-                <li class="navbar-item">
-                  <a
-                    href="#"
-                    class="btn fw-bolder bg-secondary text-white ms-lg-3"
-                    role="button"
-                    >LOGIN</a
-                  >
-                </li>
-              </ul>
-            </section>
-          </div>
-        </div>
-      </section>
-    </nav>
-    <main class="container">
-      <!-- Exercici 1  -->
-      <section class="row my-4">
-        <div class="col-sm-12 col-md-6 order-1 order-md-0">
-          <div class="d-flex align-items-center h-100 mt-4">
-            <article class="d-flex flex-column gap-4">
-              <h1 class="fw-bolder">A Simple Bookmark Manager</h1>
-              <p class="fs-5">
-                A clean and simple interface to organize your favorite websites.
-                Open a new browser tab and see your sites load instantly. Try it
-                for free.
-              </p>
+        </section>
+      </nav>
+      <main class="container">
+        <!-- Exercici 1  -->
+        <section class="row my-4">
+          <div class="col-sm-12 col-md-6 order-1 order-md-0">
+            <div class="d-flex align-items-center h-100 mt-4">
+              <article class="d-flex flex-column gap-4">
+                <h1 class="fw-bolder">A Simple Bookmark Manager</h1>
+                <p class="fs-5">
+                  A clean and simple interface to organize your favorite
+                  websites. Open a new browser tab and see your sites load
+                  instantly. Try it for free.
+                </p>
 
-              <footer>
-                <button class="btn bg-primary me-2 text-white">
-                  Get it on Chrome
-                </button>
-                <button class="btn bg-light">Get it on Firefox</button>
-              </footer>
+                <footer>
+                  <button class="btn bg-primary me-2 text-white">
+                    Get it on Chrome
+                  </button>
+                  <button class="btn bg-light">Get it on Firefox</button>
+                </footer>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 position-relative">
+            <article class="d-flex decoration">
+              <img
+                style="z-index: -1"
+                src="/images/illustration-hero.svg"
+                alt="illustration-features"
+                class="img-fluid"
+              />
             </article>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6 position-relative">
-          <article class="d-flex decoration">
-            <img
-            style="z-index: -1;"
-              src="/images/illustration-hero.svg"
-              alt="illustration-features"
-              class="img-fluid"
-            />
-          </article>
-        </div>
-      </section>
-      <!-- Exercici 2 Features -->
-      <section class="row my-4">
-        <div class="col-md-12 my-4">
-          <article class="text-center">
-            <h2 class="fw-bolder">Features</h2>
-            <p class="fs-5">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-              mollitia beatae at earum tempora asperiores necessitatibus id qui
-              nisi esse.
-            </p>
-          </article>
-        </div>
-        <!-- Tabs Bootstrap -->
-        <div class="col my-4">
-          <div class="nav nav-tabs flex-column flex-md-row justify-content-center" role="tablist">
-            <button
-              class="fw-bold color-link-tabs p-4 nav-item btn btn-link text-decoration-none active"
-              data-bs-toggle="tab"
-              data-bs-target="#bookmarking"
-            >
-              Simple Bookmarking
-            </button>
-            <button
-              class="fw-bold color-link-tabs p-4 nav-item btn btn-link text-decoration-none"
-              data-bs-toggle="tab"
-              data-bs-target="#shearching"
-            >
-              Speedy Shearching
-            </button>
-            <button
-              class="fw-bold color-link-tabs p-4 nav-item btn btn-link text-decoration-none"
-              data-bs-toggle="tab"
-              data-bs-target="#sharing"
-            >
-              Easy Sharing
-            </button>
-          </div>
-          <div class="tab-content my-5" id="content-tabs">
-            <!-- Tab Bookmark -->
-            <article class="tab-pane active" role="tabpanel" id="bookmarking">
-              <div class="row my-4">
-                <div class="col-sm-12 col-md-6 px-4">
-                  <img
-                    src="/images/illustration-features-tab-1.svg"
-                    class="img-fluid"
-                    alt="Image Illustration Features"
-                  />
-                </div>
-                <div class="col-sm-12 col-md-6 my-4">
-                  <article
-                    class="d-flex flex-column  px-4 text-center text-md-start justify-content-center h-100"
-                  >
-                    <h3 class="fw-bold pt-4 p-md-0">Bookmark in one click</h3>
-                    <p class="fs-5">
-                      Organize your bookmarks however you like. Our simple
-                      darg-and-drop interface gives you complete control over
-                      how manage your favorite sites.
-                    </p>
-                    <button type="button" class="btn btn-primary">
-                      More Info
-                    </button>
-                  </article>
-                </div>
-              </div>
-            </article>
-            <!-- Tab Shearching -->
-            <article class="tab-pane fade" id="shearching">
-              <div class="row">
-                <div class="col">
-                  <img
-                    src="/images/illustration-features-tab-2.svg"
-                    class="img-full"
-                    alt="Image Illustration Features"
-                  />
-                </div>
-                <div class="col">
-                  <article
-                    class="d-flex flex-column gap-4 px-4 justify-content-center h-100"
-                  >
-                    <h3 class="fw-bold">Intellgent shearch</h3>
-                    <p class="fs-5">
-                      Our powerful shearch feature will help you find saved
-                      sites in no time at all. No need to trawl through all of
-                      your bookmark.
-                    </p>
-                    <button type="button" class="btn btn-primary w-25">
-                      More Info
-                    </button>
-                  </article>
-                </div>
-              </div>
-            </article>
-            <!-- Tab Sharing -->
-            <article class="tab-pane fade" id="sharing">
-              <div class="row">
-                <div class="col">
-                  <img
-                    src="/images/illustration-features-tab-3.svg"
-                    class="img-full"
-                    alt="Image Illustration Features"
-                  />
-                </div>
-                <div class="col">
-                  <article
-                    class="d-flex flex-column gap-4 px-4 justify-content-center h-100"
-                  >
-                    <h3 class="fw-bold">Share your bookmarks</h3>
-                    <p class="fs-5">
-                      Easly share your bookmarks and collections with others.
-                      Create a shareable link that you can send at the click of
-                      a button.
-                    </p>
-                    <button type="button" class="btn btn-primary w-25">
-                      More Info
-                    </button>
-                  </article>
-                </div>
-              </div>
+        </section>
+        <!-- Exercici 2 Features -->
+        <section class="row my-4">
+          <div class="col-md-12 my-4">
+            <article class="text-center">
+              <h2 class="fw-bolder">Features</h2>
+              <p class="fs-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                mollitia beatae at earum tempora asperiores necessitatibus id
+                qui nisi esse.
+              </p>
             </article>
           </div>
-        </div>
-      </section>
-    </main>
+          <!-- Tabs Bootstrap -->
+          <div class="col my-4">
+            <div
+              class="nav nav-tabs flex-column flex-md-row justify-content-center"
+              role="tablist"
+            >
+              <button
+                class="fw-bold color-link-tabs p-4 nav-item btn btn-link text-decoration-none active"
+                data-bs-toggle="tab"
+                data-bs-target="#bookmarking"
+              >
+                Simple Bookmarking
+              </button>
+              <button
+                class="fw-bold color-link-tabs p-4 nav-item btn btn-link text-decoration-none"
+                data-bs-toggle="tab"
+                data-bs-target="#shearching"
+              >
+                Speedy Shearching
+              </button>
+              <button
+                class="fw-bold color-link-tabs p-4 nav-item btn btn-link text-decoration-none"
+                data-bs-toggle="tab"
+                data-bs-target="#sharing"
+              >
+                Easy Sharing
+              </button>
+            </div>
+            <div class="tab-content my-5" id="content-tabs">
+              <!-- Tab Bookmark -->
+              <article class="tab-pane active" role="tabpanel" id="bookmarking">
+                <div class="row my-4">
+                  <div class="col-sm-12 col-md-6 px-4">
+                    <img
+                      src="/images/illustration-features-tab-1.svg"
+                      alt="Image Illustration Features"
+                    />
+                  </div>
+                  <div class="col-sm-12 col-md-6 my-4">
+                    <article
+                      class="d-flex flex-column px-4 text-center text-md-start justify-content-center h-100"
+                    >
+                      <h3 class="fw-bold pt-4 p-md-0">Bookmark in one click</h3>
+                      <p class="fs-5">
+                        Organize your bookmarks however you like. Our simple
+                        darg-and-drop interface gives you complete control over
+                        how manage your favorite sites.
+                      </p>
+                      <button type="button" class="btn btn-primary">
+                        More Info
+                      </button>
+                    </article>
+                  </div>
+                </div>
+              </article>
+              <!-- Tab Shearching -->
+              <article class="tab-pane fade" id="shearching">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 px-4">
+                    <img
+                      src="/images/illustration-features-tab-2.svg"
+                      class="img-full"
+                      alt="Image Illustration Features"
+                    />
+                  </div>
+                  <div class="col-sm-12 col-md-6 my-4">
+                    <article
+                      class="d-flex flex-column px-4 text-center text-md-start justify-content-center h-100"
+                    >
+                      <h3 class="fw-bold">Intellgent shearch</h3>
+                      <p class="fs-5 px-4 text-center text-md-start">
+                        Our powerful shearch feature will help you find saved
+                        sites in no time at all. No need to trawl through all of
+                        your bookmark.
+                      </p>
+                      <button type="button" class="btn btn-primary">
+                        More Info
+                      </button>
+                    </article>
+                  </div>
+                </div>
+              </article>
+              <!-- Tab Sharing -->
+              <article class="tab-pane fade" id="sharing">
+                <div class="row">
+                  <div class="col">
+                    <img
+                      src="/images/illustration-features-tab-3.svg"
+                      class="img-full"
+                      alt="Image Illustration Features"
+                    />
+                  </div>
+                  <div class="col">
+                    <article
+                      class="d-flex flex-column gap-4 px-4 justify-content-center h-100"
+                    >
+                      <h3 class="fw-bold">Share your bookmarks</h3>
+                      <p class="fs-5">
+                        Easly share your bookmarks and collections with others.
+                        Create a shareable link that you can send at the click
+                        of a button.
+                      </p>
+                      <button type="button" class="btn btn-primary w-25">
+                        More Info
+                      </button>
+                    </article>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
   </body>
 </html>
