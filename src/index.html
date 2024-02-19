@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,28 +8,79 @@
     <script type="module" src="/js/main.js" defer></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg py-4 sticky-top bg-light">
       <section class="container">
-        <a href="#" class="nav-link">
-          <img src="/images/logo-bookmark.svg" alt="Logo">
-        </a>
-        <section class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="navbar-item">
-              <a href="#" class="nav-link">FEATURES</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="nav-link">PRICING</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="nav-link">CONTACT</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="nav-link">LOGIN</a>
-            </li>
-          </ul>
-        </section>
+        <div class="row w-100">
+          <div class="col d-flex align-items-center">
+            <a href="#" class="nav-link">
+              <img src="/images/logo-bookmark.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="col d-flex justify-content-end d-md-none">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-12 col-md-6">
+            <section
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="navbar-item">
+                  <a href="#" class="nav-link fw-bolder me-3">FEATURES</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="nav-link fw-bolder me-3">PRICING</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="nav-link fw-bolder me-3">CONTACT</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="btn fw-bolder ms-lg-3" role="button"
+                    >LOGIN</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
       </section>
     </nav>
+    <main class="container ">
+      <section class="row my-4">
+        <div class="col-sm-12 col-md-6 order-1 order-md-0 ">
+          <div class="d-flex align-items-center h-100 ">
+            <article class="d-flex flex-column gap-4">
+              <h2>A Simple Bookmark Manager</h2>
+              <p>
+                A clean and simple interface to organize your favorite websites.
+                Open a new browser tab and see your sites load instantly. Try it
+                for free.
+              </p>
+
+              <footer>
+                <button class="btn bg-primary me-2 text-white">Get it on Chrome</button>
+                <button class="btn bg-light">Get it on Firefox</button>
+              </footer>
+            </article>
+          </div>
+        </div>
+        <div class="col  position-relative ">
+          <article class="d-flex decoration">
+            <img
+              src="/images/illustration-hero.svg"
+              alt="illustration-features"
+              class="img-fluid"
+            />
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
