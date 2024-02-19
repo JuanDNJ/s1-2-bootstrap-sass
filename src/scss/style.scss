@@ -9,9 +9,13 @@ $bg-decortion: #5265E1;
 body{
     color: $gray-600;
 }
-h1, h2{
+.color-link-tabs{
+    color: $gray-500;
+}
+h1, h2, h3{
     color: $black;
 }
+
 
 .decoration::after {
     content: '';
@@ -24,5 +28,5 @@ h1, h2{
     padding: 1rem;
     background-color: $bg-decortion;
     border-radius: 0 0 0 100px;
-    z-index: -1;
+    z-index: -2;
 }
