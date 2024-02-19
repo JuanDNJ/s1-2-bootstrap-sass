@@ -8,6 +8,7 @@
     <script type="module" src="/js/main.js" defer></script>
   </head>
   <body>
+    <!-- Exercici 1  Navbar Grid Bootstrap-->
     <nav class="navbar navbar-expand-lg py-4 bg-white position-sticky top-0">
       <section class="container">
         <div class="row w-100">
@@ -56,6 +57,7 @@
       </section>
     </nav>
     <main class="container">
+      <!-- Exercici 1  -->
       <section class="row my-4">
         <div class="col-sm-12 col-md-6 order-1 order-md-0">
           <div class="d-flex align-items-center h-100 mt-4">
@@ -87,7 +89,8 @@
           </article>
         </div>
       </section>
-      <section class="row">
+      <!-- Exercici 2 Features -->
+      <section class="row my-4">
         <div class="col-md-12 my-4">
           <article class="text-center">
             <h2 class="fw-bolder">Features</h2>
@@ -98,8 +101,9 @@
             </p>
           </article>
         </div>
+        <!-- Tabs Bootstrap -->
         <div class="col my-4">
-          <div class="nav nav-tabs justify-content-center" role="tablist">
+          <div class="nav nav-tabs flex-column flex-md-row justify-content-center" role="tablist">
             <button
               class="fw-bold color-link-tabs p-4 nav-item btn btn-link text-decoration-none active"
               data-bs-toggle="tab"
@@ -123,32 +127,34 @@
             </button>
           </div>
           <div class="tab-content my-5" id="content-tabs">
+            <!-- Tab Bookmark -->
             <article class="tab-pane active" role="tabpanel" id="bookmarking">
-              <div class="row">
-                <div class="col-6">
+              <div class="row my-4">
+                <div class="col-sm-12 col-md-6 px-4">
                   <img
                     src="/images/illustration-features-tab-1.svg"
                     class="img-fluid"
                     alt="Image Illustration Features"
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-sm-12 col-md-6 my-4">
                   <article
-                    class="d-flex flex-column gap-4 px-4 justify-content-center h-100"
+                    class="d-flex flex-column  px-4 text-center text-md-start justify-content-center h-100"
                   >
-                    <h3 class="fw-bold">Bookmark in one click</h3>
+                    <h3 class="fw-bold pt-4 p-md-0">Bookmark in one click</h3>
                     <p class="fs-5">
                       Organize your bookmarks however you like. Our simple
                       darg-and-drop interface gives you complete control over
                       how manage your favorite sites.
                     </p>
-                    <button type="button" class="btn btn-primary w-25">
+                    <button type="button" class="btn btn-primary">
                       More Info
                     </button>
                   </article>
                 </div>
               </div>
             </article>
+            <!-- Tab Shearching -->
             <article class="tab-pane fade" id="shearching">
               <div class="row">
                 <div class="col">
@@ -175,6 +181,7 @@
                 </div>
               </div>
             </article>
+            <!-- Tab Sharing -->
             <article class="tab-pane fade" id="sharing">
               <div class="row">
                 <div class="col">
