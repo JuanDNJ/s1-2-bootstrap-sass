@@ -8,7 +8,7 @@
     <script type="module" src="/js/main.js" defer></script>
   </head>
   <body>
-    <section class="container-fluid overflow-hidden">
+    <section class="container-fluid overflow-hidden p-0">
       <!-- Exercici 1  Navbar Grid Bootstrap-->
       <nav class="navbar navbar-expand-lg py-4 bg-white position-sticky top-0">
         <section class="container">
@@ -139,6 +139,7 @@
                 Easy Sharing
               </button>
             </div>
+            <!-- Tab Content -->
             <div class="tab-content my-5" id="content-tabs">
               <!-- Tab Bookmark -->
               <article class="tab-pane active" role="tabpanel" id="bookmarking">
@@ -298,7 +299,7 @@
           </div>
         </section>
         <!-- FAQ -->
-        <div class="row justify-content-center">
+        <section class="row justify-content-center">
           <div class="col col-md-6 mt-5">
             <article class="d-flex flex-column text-center">
               <h2>Frequently Asked Question</h2>
@@ -426,9 +427,55 @@
                 </div>
               </div>
             </div>
+            <footer class="d-flex justify-content-center my-5">
+              <button type="button" class="btn bg-primary text-white">
+                More Info
+              </button>
+            </footer>
           </div>
-        </div>
+        </section>
       </main>
+      <!-- FOOTER -->
+      <footer class="row bg-primary justify-content-center">
+        <div class="col-9 col-md-4">
+          <article class="d-flex flex-column py-5 gap-4">
+            <span class="text-white text-center">35.000 * ALREADY JOINED</span>
+            <h2 class="text-white text-center">Stay up-to-date with what we´re doing</h2>
+            <form>
+              <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-7">
+                  <input type="text" readonly class="ps-4 form-control-plaintext bg-white rounded-2" id="staticEmail" placeholder="Enter your email address">
+                </div>
+                <div class="col-12 col-lg-3">
+                  <button type="submit" class="btn btn-secondary text-white mb-3">Conatct Us</button>
+                </div>
+              </div>
+            </form>
+          </article>
+        </div>
+        <aside class="p-4 bg-black bg-gradient">
+          <div class="container">
+            <section class="row align-items-center">
+              <div class="col-5">
+                <nav class="navbar">
+                  <a href="#" class="nav-link">
+                    <img src="/images/logo-bookmark.svg" alt="Logo" />
+                  </a>
+                  <a href="#">FEATURES</a>
+                  <a href="#">PRICING</a>
+                  <a href="#">CONTACT</a>
+                </nav>
+              </div>
+              <div class="col">
+                <article class="d-flex justify-content-end gap-3">
+                  <a href="#">Facebook</a>
+                  <a href="#">Twiter</a>
+                </article>
+              </div>
+            </section>
+          </div>
+        </aside>
+      </footer>
     </section>
   </body>
 </html>
