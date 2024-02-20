@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap & Sass</title>
+    defe
     <script type="module" src="/js/main.js" defer></script>
   </head>
   <body>
@@ -27,13 +28,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
               >
-              <!-- TODO: Modificar el boton mobile -->
-                <img
-                  src="/images/icon-hamburger.svg"
-                  width="36"
-                  height="30"
-                  alt="Icon Hamburger"
-                />
+                <span class="navbar-toggler-icon"></span>
               </button>
             </div>
             <!-- Menu -->
@@ -157,7 +152,9 @@
                     <article
                       class="d-flex flex-column px-4 text-center text-md-start justify-content-center h-100"
                     >
-                      <h3 class="fw-bold fs-2 pt-4 p-md-0">Bookmark in one click</h3>
+                      <h3 class="fw-bold fs-2 pt-4 p-md-0">
+                        Bookmark in one click
+                      </h3>
                       <p>
                         Organize your bookmarks however you like. Our simple
                         darg-and-drop interface gives you complete control over
@@ -238,6 +235,55 @@
               </article>
             </div>
           </div>
+        </section>
+        <!-- Descargas -->
+        <section class="d-flex flex-column">
+          <article class="text-center">
+            <h3>Download the extension</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              facilis exercitationem fugiat qui! Quod in aliquid voluptatibus,
+              dolorem voluptatum molestiae?
+            </p>
+          </article>
+          <section class="custom-grid">
+            <article class="custom-card">
+              <img
+                width="96"
+                height="96"
+                src="/images/logo-chrome.svg"
+                alt="Logo Chrome"
+              />
+              <h4>Add to Chrome</h4>
+              <span>Minum version 62</span>
+              <img src="/images/bg-dots.svg" alt="Dots" />
+              <button class="btn bg-primary text-white">Add & Install Extension</button>
+            </article>
+            <article class="custom-card">
+              <img
+                width="96"
+                height="96"
+                src="/images/logo-firefox.svg"
+                alt="Logo Chrome"
+              />
+              <h4>Add to Firefox</h4>
+              <span>Minum version 62</span>
+              <img src="/images/bg-dots.svg" alt="Dots" />
+              <button class="btn bg-primary text-white">Add & Install Extension</button>
+            </article>
+            <article class="custom-card">
+              <img
+                width="96"
+                height="96"
+                src="/images/logo-opera.svg"
+                alt="Logo Chrome"
+              />
+              <h4>Add to Opera</h4>
+              <span>Minum version 62</span>
+              <img src="/images/bg-dots.svg" alt="Dots" />
+              <button class="btn bg-primary text-white">Add & Install Extension</button>
+            </article>
+          </section>
         </section>
       </main>
     </section>
