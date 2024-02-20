@@ -5,7 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap & Sass</title>
-    defe
     <script type="module" src="/js/main.js" defer></script>
   </head>
   <body>
@@ -87,7 +86,7 @@
               </article>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 position-relative">
+          <div class="col-sm-12 col-md-6">
             <article class="d-flex decoration-right">
               <img
                 style="z-index: -1"
@@ -99,9 +98,11 @@
           </div>
         </section>
         <!-- Exercici 2 Features -->
-        <section class="row justify-content-center">
-          <div class="col-6 my-5">
-            <article class="d-flex flex-column text-center align-items-center">
+        <section class="row justify-content-center mt-5">
+          <div class="col-6">
+            <article
+              class="d-flex flex-column text-center align-items-center pt-5"
+            >
               <h2 class="fw-bolder">Features</h2>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
@@ -111,7 +112,7 @@
             </article>
           </div>
           <!-- Tabs Bootstrap -->
-          <div class="col-12 my-2">
+          <div class="col-12 mt-5">
             <div
               class="nav nav-tabs flex-column flex-md-row justify-content-center"
               role="tablist"
@@ -141,20 +142,21 @@
             <div class="tab-content my-5" id="content-tabs">
               <!-- Tab Bookmark -->
               <article class="tab-pane active" role="tabpanel" id="bookmarking">
-                <div class="row my-4 position-relative">
-                  <article class="col-sm-12 col-md-6 px-4 decoration-left">
-                    <img
-                      src="/images/illustration-features-tab-1.svg"
-                      alt="Image Illustration Features"
-                    />
-                  </article>
-                  <div class="col-sm-12 col-md-6 my-4">
+                <div class="row my-4">
+                  <div class="col-sm-12 col-md-6">
+                    <article class="decoration-left">
+                      <img
+                        src="/images/illustration-features-tab-1.svg"
+                        alt="Image Illustration Features"
+                        class="img-fluid"
+                      />
+                    </article>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
                     <article
-                      class="d-flex flex-column px-4 text-center text-md-start justify-content-center h-100"
+                      class="d-flex flex-column px-4 my-5 text-center text-md-start justify-content-center h-100"
                     >
-                      <h3 class="fw-bold fs-2 pt-4 p-md-0">
-                        Bookmark in one click
-                      </h3>
+                      <h3 class="fw-bold fs-2">Bookmark in one click</h3>
                       <p>
                         Organize your bookmarks however you like. Our simple
                         darg-and-drop interface gives you complete control over
@@ -177,11 +179,11 @@
                   <div class="col-sm-12 col-md-6 px-4">
                     <img
                       src="/images/illustration-features-tab-2.svg"
-                      class="img-full"
+                      class="img-fluid"
                       alt="Image Illustration Features"
                     />
                   </div>
-                  <div class="col-sm-12 col-md-6 my-4">
+                  <div class="col-sm-12 col-md-6 my-5">
                     <article
                       class="d-flex flex-column px-4 text-center text-md-start justify-content-center h-100"
                     >
@@ -208,11 +210,11 @@
                   <article class="col-sm-12 col-md-6 px-4">
                     <img
                       src="/images/illustration-features-tab-3.svg"
-                      class="img-full"
+                      class="img-fluid"
                       alt="Image Illustration Features"
                     />
                   </article>
-                  <div class="col-sm-12 col-md-6 my-4">
+                  <div class="col-sm-12 col-md-6 my-5">
                     <article
                       class="d-flex flex-column px-4 text-center text-md-start justify-content-center h-100"
                     >
@@ -237,86 +239,88 @@
           </div>
         </section>
         <!-- Descargas -->
-        <section class="d-flex flex-column align-items-center my-4">
-          <article class="w-50 d-flex text-center flex-column">
-            <h3 class="fw-bolder">Download the extension</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              facilis exercitationem fugiat qui! Quod in aliquid voluptatibus,
-              dolorem voluptatum molestiae?
-            </p>
-          </article>
-          <section class="custom-grid w-100">
-            <article class="custom-card">
-              <img
-                width="96"
-                height="96"
-                src="/images/logo-chrome.svg"
-                alt="Logo Chrome"
-              />
-              <h4>Add to Chrome</h4>
-              <span>Minum version 62</span>
-              <img src="/images/bg-dots.svg" alt="Dots" />
-              <button class="btn bg-primary text-white">
-                Add & Install Extension
-              </button>
+        <section class="row justify-content-center">
+          <div class="col col-md-5 pt-lg-5">
+            <article class="d-flex text-center flex-column py-5">
+              <h3 class="fw-bolder">Download the extension</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                facilis exercitationem fugiat qui! Quod in aliquid voluptatibus,
+                dolorem voluptatum molestiae?
+              </p>
             </article>
-            <article class="custom-card">
-              <img
-                width="96"
-                height="96"
-                src="/images/logo-firefox.svg"
-                alt="Logo Chrome"
-              />
-              <h4>Add to Firefox</h4>
-              <span>Minum version 62</span>
-              <img src="/images/bg-dots.svg" alt="Dots" />
-              <button class="btn bg-primary text-white">
-                Add & Install Extension
-              </button>
-            </article>
-            <article class="custom-card">
-              <img
-                width="96"
-                height="96"
-                src="/images/logo-opera.svg"
-                alt="Logo Chrome"
-              />
-              <h4>Add to Opera</h4>
-              <span>Minum version 62</span>
-              <img src="/images/bg-dots.svg" alt="Dots" />
-              <button class="btn bg-primary text-white">
-                Add & Install Extension
-              </button>
-            </article>
-          </section>
+          </div>
+          <div class="col-12">
+            <section class="custom-grid w-100">
+              <article class="custom-card">
+                <img
+                  width="96"
+                  height="96"
+                  src="/images/logo-chrome.svg"
+                  alt="Logo Chrome"
+                />
+                <h4>Add to Chrome</h4>
+                <span>Minum version 62</span>
+                <img src="/images/bg-dots.svg" alt="Dots" />
+                <button class="btn bg-primary text-white">
+                  Add & Install Extension
+                </button>
+              </article>
+              <article class="custom-card">
+                <img
+                  width="96"
+                  height="96"
+                  src="/images/logo-firefox.svg"
+                  alt="Logo Chrome"
+                />
+                <h4>Add to Firefox</h4>
+                <span>Minum version 62</span>
+                <img src="/images/bg-dots.svg" alt="Dots" />
+                <button class="btn bg-primary text-white">
+                  Add & Install Extension
+                </button>
+              </article>
+              <article class="custom-card">
+                <img
+                  width="96"
+                  height="96"
+                  src="/images/logo-opera.svg"
+                  alt="Logo Chrome"
+                />
+                <h4>Add to Opera</h4>
+                <span>Minum version 62</span>
+                <img src="/images/bg-dots.svg" alt="Dots" />
+                <button class="btn bg-primary text-white">
+                  Add & Install Extension
+                </button>
+              </article>
+            </section>
+          </div>
         </section>
         <!-- FAQ -->
-        <div
-          class="d-flex flex-column justify-content-center align-items-center gap-4 my-5"
-        >
-          <article class="w-50 d-flex flex-column text-center">
-            <h2>Frequently Asked Question</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
-              saepe itaque non exercitationem atque voluptatum temporibus eius a
-              ipsum labore.
-            </p>
-          </article>
+        <div class="row justify-content-center">
+          <div class="col col-md-6 mt-5">
+            <article class="d-flex flex-column text-center">
+              <h2>Frequently Asked Question</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                saepe itaque non exercitationem atque voluptatum temporibus eius
+                a ipsum labore.
+              </p>
+            </article>
+          </div>
           <!-- Accordion -->
-          <article
-            class="d-flex flex-column align-items-center justify-content-center gap-5"
-          >
-            <div class="accordion" id="accordionExample">
+          <div class="col-12 col-lg-7 mt-5">
+            <div class="accordion" id="accordion-faq">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="bookmark">
+                <h2 class="accordion-header">
                   <button
-                    class="accordion-button"
+                    class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#bookmark"
                     aria-expanded="true"
-                    aria-controls="collapseOne"
+                    aria-controls="bookmark"
                   >
                     What is Bookmark?
                   </button>
@@ -324,60 +328,54 @@
                 <div
                   id="bookmark"
                   class="accordion-collapse collapse"
-                  aria-labelledby="bookmark"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent="#accordion-faq"
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Facere, delectus atque tempore quam doloribus est unde
-                      iusto quas at consectetur! Esse provident, soluta mollitia
-                      minus quidem culpa enim nulla tempore inventore, accusamus
-                      omnis? Ad asperiores ipsam libero quae harum laboriosam
-                      incidunt tenetur, odio reiciendis nisi at maiores
-                      assumenda impedit cumque.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt quibusdam cupiditate voluptatem amet, molestias
+                      ut ipsam quia, veritatis hic consectetur fugit ipsum velit
+                      rerum. Consectetur molestiae ea repellat ipsum magnam.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="browser">
+                <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#browser"
                     aria-expanded="false"
-                    aria-controls="collapseTwo"
+                    aria-controls="browser"
                   >
-                    How can i request a new browser?
+                    How can request a new browser?
                   </button>
                 </h2>
                 <div
                   id="browser"
                   class="accordion-collapse collapse"
-                  aria-labelledby="browser"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent="#accordion-faq"
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Similique eos laudantium necessitatibus autem voluptatem
-                      assumenda reprehenderit labore. Sed iste quibusdam
-                      explicabo tenetur illo ad voluptas?
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Deleniti ducimus quaerat odio, autem suscipit tenetur
+                      voluptates ipsam aliquid voluptatibus laboriosam!
                     </p>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="mobile-app">
+                <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#mobile-app"
                     aria-expanded="false"
-                    aria-controls="collapseThree"
+                    aria-controls="mobile-app"
                   >
                     Is there a mobile app?
                   </button>
@@ -385,31 +383,29 @@
                 <div
                   id="mobile-app"
                   class="accordion-collapse collapse"
-                  aria-labelledby="mobile-app"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent="#accordion-faq"
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Esse incidunt eum facilis amet odio, veritatis obcaecati
-                      expedita pariatur assumenda saepe atque est, impedit unde,
-                      accusantium doloremque. Placeat vero itaque provident, ad
-                      rerum commodi, voluptatem aspernatur officia tenetur
-                      impedit quos temporibus veniam excepturi nesciunt
-                      consequuntur dolores. Impedit voluptas explicabo optio ut?
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Suscipit ea molestias tempora ducimus vero deserunt
+                      perspiciatis? Culpa rerum molestias excepturi suscipit
+                      voluptatibus iure officia minus saepe eius quae accusamus
+                      optio iste aliquid sit reiciendis sapiente nihil iusto,
+                      eaque modi sed.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="chromium-browsers">
+                <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#chromium-browsers"
                     aria-expanded="false"
-                    aria-controls="collapseThree"
+                    aria-controls="chromium-browsers"
                   >
                     What about other Chromium browsers?
                   </button>
@@ -417,20 +413,20 @@
                 <div
                   id="chromium-browsers"
                   class="accordion-collapse collapse"
-                  aria-labelledby="chromium-browsers"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent="#accordion-faq"
                 >
                   <div class="accordion-body">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Qui, accusamus illum. Commodi quis sint vitae.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Eveniet nam ipsam nesciunt minima accusamus harum, quos
+                      dolorem qui sit, incidunt sapiente praesentium repellendus
+                      atque cupiditate.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="btn bg-primary text-white">More Info</button>
-          </article>
+          </div>
         </div>
       </main>
     </section>

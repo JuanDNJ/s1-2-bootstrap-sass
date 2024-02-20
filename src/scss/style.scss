@@ -24,43 +24,36 @@ body{
 h1, h2, h3, h4{
     color: $black;
 }
-img{
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-} 
-@mixin dir_decoration($dir: 10%, $radius:0 0 0 100px ) {
+// img{
+//     width: 100%;
+//     object-fit: cover;
+//     object-position: center;
+// } 
+@mixin dir_decoration($x,$y,$width,$radius ) {
     content: '';
     position: absolute;
     width: 100vw;
-    height: 80%;
-    transform: translate($dir, 33%);
+    height: $width;
+    transform: translate($x, $y);
     padding: 1rem;
     background-color: $bg-decortion;
     border-radius: $radius;
-    z-index: -2;
-    
+    z-index: -2;  
+}
+.decoration-right, .decoration-left{
+    position: relative;
 }
 .decoration-right::after {
-    @include dir_decoration(10%);
-    // content: '';
-    // position: absolute;
-    // width: 100vw;
-    // height: 80%;
-    // transform: translate(10%, 33%);
-    // padding: 1rem;
-    // background-color: $bg-decortion;
-    // border-radius: 0 0 0 100px;
-    // z-index: -2;
+    @include dir_decoration(10%, 33%, 80%, 0 0 0 100px);
 }
 .decoration-left::after{
-    @include dir_decoration(-10%, 100px 0 0 0);
+    @include dir_decoration(-110%, 33%, 100%, 0 0 100px 0);
 }
 .custom-grid{
     display: grid;
-    row-gap: 2rem;
+    row-gap: 1rem;
     place-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 .paragraf{
     max-width: 50%;
