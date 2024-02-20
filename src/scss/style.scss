@@ -15,6 +15,11 @@ body{
 .color-link-tabs{
     color: $gray-500;
     font-size: 1.2rem;
+    border-bottom: 2px solid transparent;
+}
+.color-link-tabs:hover,
+.color-link-tabs:focus{
+    border-bottom: 2px solid orange;
 }
 h1, h2, h3, h4{
     color: $black;
@@ -23,23 +28,42 @@ img{
     width: 100%;
     object-fit: cover;
     object-position: center;
-}
-.decoration::after {
+} 
+@mixin dir_decoration($dir: 10%, $radius:0 0 0 100px ) {
     content: '';
     position: absolute;
     width: 100vw;
     height: 80%;
-    transform: translate(10%, 33%);
+    transform: translate($dir, 33%);
     padding: 1rem;
     background-color: $bg-decortion;
-    border-radius: 0 0 0 100px;
+    border-radius: $radius;
     z-index: -2;
+    
+}
+.decoration-right::after {
+    @include dir_decoration(10%);
+    // content: '';
+    // position: absolute;
+    // width: 100vw;
+    // height: 80%;
+    // transform: translate(10%, 33%);
+    // padding: 1rem;
+    // background-color: $bg-decortion;
+    // border-radius: 0 0 0 100px;
+    // z-index: -2;
+}
+.decoration-left::after{
+    @include dir_decoration(-10%, 100px 0 0 0);
 }
 .custom-grid{
     display: grid;
     row-gap: 2rem;
     place-items: center;
     padding: 2rem;
+}
+.paragraf{
+    max-width: 50%;
 }
 .custom-card{
     background-color: white;
@@ -65,3 +89,4 @@ img{
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
 }
+
