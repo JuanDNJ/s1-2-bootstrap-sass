@@ -8,58 +8,60 @@
     <script type="module" src="/js/main.js" defer></script>
   </head>
   <body>
-    <section class="container-fluid overflow-hidden p-0">
-      <!-- Exercici 1  Navbar Grid Bootstrap-->
-      <nav class="navbar navbar-expand-lg py-4 bg-white position-sticky top-0">
-        <section class="container">
-          <div class="row w-100 m-0">
-            <!-- Logo -->
-            <div class="col-6 d-flex align-items-center">
-              <a href="#" class="nav-link">
-                <img src="/images/logo-bookmark.svg" alt="Logo" />
-              </a>
-            </div>
-            <!-- Boton Mobile -->
-            <div class="col-6 d-flex justify-content-end d-lg-none">
-              <button
-                class="navbar-toggler p-2"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <!-- Menu -->
-            <div class="col-md-6">
-              <section
-                class="collapse navbar-collapse justify-content-center"
-                id="navbarNav"
-              >
-                <ul class="navbar-nav">
-                  <li class="navbar-item">
-                    <a href="#features" class="nav-link fw-bolder me-3">FEATURES</a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#" class="nav-link fw-bolder me-3">PRICING</a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#contact" class="nav-link fw-bolder me-3">CONTACT</a>
-                  </li>
-                  <li class="navbar-item">
-                    <a
-                      href="#"
-                      class="btn fw-bolder bg-secondary text-white ms-lg-3"
-                      role="button"
-                      >LOGIN</a
-                    >
-                  </li>
-                </ul>
-              </section>
-            </div>
+    <!-- Exercici 1  Navbar Grid Bootstrap-->
+    <nav class="navbar navbar-expand-lg py-4 bg-white sticky-top">
+      <section class="container">
+        <div class="row w-100 m-0">
+          <!-- Logo -->
+          <div class="col-6 d-flex align-items-center">
+            <a href="#" class="nav-link">
+              <img src="/images/logo-bookmark.svg" alt="Logo" />
+            </a>
           </div>
-        </section>
-      </nav>
+          <!-- Boton Mobile -->
+          <div class="col-6 d-flex justify-content-end d-lg-none">
+            <button
+              class="navbar-toggler p-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <!-- Menu -->
+          <div class="col-md-6">
+            <section
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="navbar-item">
+                  <a href="#features" class="nav-link fw-bolder me-3"
+                    >FEATURES</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="nav-link fw-bolder me-3">PRICING</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#contact" class="nav-link fw-bolder me-3">CONTACT</a>
+                </li>
+                <li class="navbar-item">
+                  <a
+                    href="#"
+                    class="btn fw-bolder bg-secondary text-white ms-lg-3"
+                    role="button"
+                    >LOGIN</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <section class="container-fluid overflow-hidden p-0 m-0">
       <main class="container">
         <!-- Exercici 1  -->
         <section class="row my-4">
@@ -435,51 +437,88 @@
           </div>
         </section>
       </main>
-      <!-- FOOTER -->
-      <footer class="row bg-primary justify-content-center">
-        <div class="col-9 col-md-4">
-          <article class="d-flex flex-column py-5 gap-4">
-            <span class="text-white text-center">35.000 * ALREADY JOINED</span>
-            <h2 class="text-white text-center">Stay up-to-date with what we´re doing</h2>
-            <form id="contact" class="form-contact-us" novalidate>
-              <div class="row grid-column justify-content-around gap-3">
-                <div class="col-12 col-md-8">
-                  <input type="text" class="ps-4 form-control-plaintext bg-white rounded-2" id="staticEmail" placeholder="Enter your email address" required>
-                </div>
-                <div class="col col-md-3">
-                  <button type="submit" class="btn btn-secondary text-white mb-3 w-100">Conatct Us</button>
-                </div>
-              </div>
-            </form>
-          </article>
-        </div>
-        <aside class="p-3 bg-black bg-gradient">
-          <div class="container">
-            <section class="row  align-items-center">
-              <div class="col-12 col-lg-5">
-                <nav class="navbar flex-column h-100 flex-lg-row">
-                  <a href="#" class="nav-link" title="Bookmark">
-                    <img src="/images/logo-bookmark-white.svg" alt="Logo Blanco" />
-                  </a>
-                  <a href="#features" class="nav-link p-2 text-white fw-bold" title="FEATURES">FEATURES</a>
-                  <a href="#pricing" class="nav-link p-2 text-white fw-bold" title="PRICING">PRICING</a>
-                  <a href="#contact" class="nav-link p-2 text-white fw-bold" title="CONTACT">CONTACT</a>
-                </nav>
-              </div>
-              <div class="col">
-                <article class="d-flex justify-content-center justify-content-lg-end gap-3 mt-2">
-                  <a href="#" class="nav-link text-white fw-bold" title="Facebook">
-                    <img src="/images/icon-facebook.svg" alt="Icon Facebook">
-                  </a>
-                  <a href="#" class="nav-link text-white fw-bold" title="Twitter">
-                    <img src="/images/icon-twitter.svg" alt="Icon Twitter">
-                  </a>
-                </article>
-              </div>
-            </section>
-          </div>
-        </aside>
-      </footer>
     </section>
+    <!-- FOOTER -->
+    <footer class="row bg-primary justify-content-center m-0">
+      <div class="col-9 col-md-4">
+        <article class="d-flex flex-column py-5 gap-4">
+          <span class="text-white text-center">35.000 * ALREADY JOINED</span>
+          <h2 class="text-white text-center">
+            Stay up-to-date with what we´re doing
+          </h2>
+          <form id="contact" class="form-contact-us" novalidate>
+            <div class="row grid-column justify-content-around gap-3">
+              <div class="col-12 col-md-8">
+                <input
+                  type="text"
+                  class="ps-4 form-control-plaintext bg-white rounded-2"
+                  id="staticEmail"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+              <div class="col col-md-3">
+                <button
+                  type="submit"
+                  class="btn btn-secondary text-white mb-3 w-100"
+                >
+                  Conatct Us
+                </button>
+              </div>
+            </div>
+          </form>
+        </article>
+      </div>
+      <aside class="p-3 bg-black bg-gradient">
+        <div class="container">
+          <section class="row align-items-center">
+            <div class="col-12 col-lg-5">
+              <nav class="navbar flex-column h-100 flex-lg-row">
+                <a href="#" class="nav-link" title="Bookmark">
+                  <img
+                    src="/images/logo-bookmark-white.svg"
+                    alt="Logo Blanco"
+                  />
+                </a>
+                <a
+                  href="#features"
+                  class="nav-link p-2 text-white fw-bold"
+                  title="FEATURES"
+                  >FEATURES</a
+                >
+                <a
+                  href="#pricing"
+                  class="nav-link p-2 text-white fw-bold"
+                  title="PRICING"
+                  >PRICING</a
+                >
+                <a
+                  href="#contact"
+                  class="nav-link p-2 text-white fw-bold"
+                  title="CONTACT"
+                  >CONTACT</a
+                >
+              </nav>
+            </div>
+            <div class="col">
+              <article
+                class="d-flex justify-content-center justify-content-lg-end gap-3 mt-2"
+              >
+                <a
+                  href="#"
+                  class="nav-link text-white fw-bold"
+                  title="Facebook"
+                >
+                  <img src="/images/icon-facebook.svg" alt="Icon Facebook" />
+                </a>
+                <a href="#" class="nav-link text-white fw-bold" title="Twitter">
+                  <img src="/images/icon-twitter.svg" alt="Icon Twitter" />
+                </a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </aside>
+    </footer>
   </body>
 </html>
