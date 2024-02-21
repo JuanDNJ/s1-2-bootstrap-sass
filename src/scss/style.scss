@@ -24,11 +24,7 @@ body{
 h1, h2, h3, h4{
     color: $black;
 }
-// img{
-//     width: 100%;
-//     object-fit: cover;
-//     object-position: center;
-// } 
+
 @mixin dir_decoration($x,$y,$width,$radius ) {
     content: '';
     position: absolute;
